@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Choose your weapon:</h1>
+    <div class="user-weapon-container">
+      <button class="btn" id="rock">rock</button>
+      <button class="btn" id="paper">paper</button>
+      <button class="btn" id="scissors">scissors</button>
+    </div>
+    <div class="computer-weapon-container">
+      <h1>Computer's choice:</h1>
+      <div class="loading-container">
+        <div id="loader"></div>
+        <p id="computer-choice">X</p>
+      </div>
+    </div>
+    <p id="line">
+      -----------------------------------------------------------------
+    </p>
+    <div class="result-outer-container">
+      <h1>Result:</h1>
+      <div class="result-inner-container">
+        <p id="user-choice" style="color: rgb(26, 26, 26)">rock</p>
+        <p id="vs" style="visibility: hidden">vs.</p>
+        <p id="computer-choice-result"></p>
+        <p class="bold">YOU</p>
+        <p></p>
+        <p class="bold">COMPUTER</p>
+        <p id="user-score">0</p>
+        <p>:</p>
+        <p id="computer-score">0</p>
+      </div>
+    </div>
+    <button class="btn" id="reset-btn">reset</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
